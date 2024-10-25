@@ -1,0 +1,1 @@
+ /Users/amit/Development/flash_chat/.dart_tool/flutter_build/e239cf3da089962040753f52cd6b721a/native_assets.yaml: 
