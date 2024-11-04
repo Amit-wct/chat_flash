@@ -70,29 +70,29 @@ class _LoginScreenState extends State<LoginScreen> {
                
                 PushButton(title: "Log In", colour: Colors.lightBlueAccent, onClick: () async{
                   setState(() {
-                    // showSpinner = true;
+                    showSpinner = true;
                   });
                  try{
-                  // final user = await  _auth.signInWithEmailAndPassword(email: email!, password: password!);
+                  final user = await  _auth.signInWithEmailAndPassword(email: email!, password: password!);
                   
                   // final user = await _auth.verifyPhoneNumber(email!);
           
-                  await FirebaseAuth.instance.verifyPhoneNumber(
-            phoneNumber: email!,
-            verificationCompleted: (PhoneAuthCredential credential) {print('lello1'); setState(() {
-              showSpinner = false;
-            });},
-            verificationFailed: (FirebaseAuthException e) {print(e);},
-            codeSent: (String verificationId, int? resendToken) {print('lello2');},
-            codeAutoRetrievalTimeout: (String verificationId) {print('lello3');},);
+            //       await FirebaseAuth.instance.verifyPhoneNumber(
+            // phoneNumber: email!,
+            // verificationCompleted: (PhoneAuthCredential credential) {print('lello1'); setState(() {
+            //   showSpinner = false;
+            // });},
+            // verificationFailed: (FirebaseAuthException e) {print(e);},
+            // codeSent: (String verificationId, int? resendToken) {print('lello2');},
+            // codeAutoRetrievalTimeout: (String verificationId) {print('lello3');},);
           // );
-          //                if(user!=null){
-          //                 Navigator.pushNamed(context, ChatScreen.id);
-          //                }
+                         if(user!=null){
+                          Navigator.pushNamed(context, ChatScreen.id);
+                         }
           
-                //  setState(() {
-                //    showSpinner = false;
-                //  });
+                 setState(() {
+                   showSpinner = false;
+                 });
                  }
                  catch (e){
                   print(e);

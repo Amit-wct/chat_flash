@@ -28,9 +28,14 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>app-1-926414924937-ios-d572ec2c4c9c421dc0aa58
-</string>
+				<string>app-1-926414924937-ios-d572ec2c4c9c421dc0aa58</string>
 			</array>
 		</dict>
 	</array>
